@@ -1,0 +1,31 @@
+/* Take a number n from user print sum of first n natural number if user enters a negative number ,show error and exit
+*/
+
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the number");
+        
+        int n=sc.nextInt();
+        if(n>=0){
+            int sumOfNatural=(n*(n+1))/2;
+            System.out.println("Sum of N number :  "+ sumOfNatural);
+        }else
+        {
+            System.out.println("Error Number "+ n);
+        }
+    }
+}
+
+
+Input and Output
+Enter the number
+-15
+Error Number -15
+
+Enter the number
+155
+Sum of N number :  12090
+
+=== Code Execution Successful ===
